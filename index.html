@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Terminal</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            height: 100vh;
+        }
+        #terminal {
+            background-color: #000;
+            overflow-y: auto;
+            padding: 1rem;
+            width: 100%;
+            max-width: 800px;
+            height: 70vh;
+            border: 1px solid #0f0;
+            border-radius: 5px;
+            color: #0f0;
+            margin-top: 50px;
+        }
+        #inputLine {
+            display: flex;
+        }
+        #commandInput {
+            background-color: #000;
+            border: none;
+            outline: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            flex: 1;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container-fluid">
+        <div class="container">
+            <header class="d-flex justify-content-end py-3">
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link text-bg-light   bg-success  " aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              </ul>
+            </header>
+          </div>        
+    </div> -->
+    <div id="terminal" class="container"></div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
