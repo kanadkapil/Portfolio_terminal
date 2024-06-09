@@ -1,39 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Terminal</title>
+    <meta name="description" content="A portfolio terminal showcasing my projects and skills in web-app development.">
+    <meta name="keywords" content="portfolio, web development, projects, skills, HTML, CSS, JavaScript">
+    <meta property="og:title" content="Portfolio Terminal">
+    <meta property="og:description" content="A portfolio terminal showcasing my projects and skills in web development.">
+    <meta property="og:type" content="website">
+
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Linear Gradient */
+        .linear-gradient-bg {
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+        }
+
+        /* Repeating Linear Gradient */
+        .repeating-linear-gradient-bg {
+            background: -moz-repeating-linear-gradient(45deg, #2c3e50, #4ca1af 10px, #2c3e50 20px);
+            background: -webkit-repeating-linear-gradient(45deg, #2c3e50, #4ca1af 10px, #2c3e50 20px);
+            background: repeating-linear-gradient(45deg, #2c3e50, #4ca1af 10px, #2c3e50 20px);
+        }
+
+        /* Radial Gradient */
+        .radial-gradient-bg {
+            background: radial-gradient(circle, #4b4d50, #000000);
+        }
+
+        /* Shadow */
+        .shadow2 {
+            overflow: hidden;
+            background-color: transparent;
+            box-shadow: 0px 12px 12px 2px rgba(0, 0, 0, 0.6);
+        }
+
+        .shadow1 {
+            overflow: hidden;
+            background-color: transparent;
+            box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Rounded Borders */
+        .round1 {
+            border-radius: 10px;
+        }
+
+        .round2 {
+            border-radius: 10px;
+        }
+
+        .circle {
+            border-radius: 100%;
+        }
+
         body {
-            background-color: #000;
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* justify-content: center; */
             height: 100vh;
         }
+
         #terminal {
-            background-color: #000;
+            background: linear-gradient(to right, #000000, #23373a);
             overflow-y: auto;
             padding: 1rem;
             width: 100%;
             max-width: 800px;
             height: 70vh;
-            border: 1px solid #0f0;
-            border-radius: 5px;
+            border: 2px solid rgb(58, 58, 58);
+            border-radius: 15px;
             color: #0f0;
-            margin-top: 50px;
+            margin-top: 100px;
         }
+
         #inputLine {
             display: flex;
         }
+
         #commandInput {
-            background-color: #000;
+            background: linear-gradient(to right, #111111, #293a3d);
             border: none;
             outline: none;
             font-family: 'Courier New', Courier, monospace;
@@ -41,36 +93,15 @@
             flex: 1;
             color: inherit;
         }
-
-        /* Mystic Night */
-.bg-mystic-night {
-  background: linear-gradient(to right, #1e3c72, #2a5298);
-}
-
-/* Dark Knight */
-.bg-dark-knight {
-  background: linear-gradient(to right, #2c3e50, #4ca1af);
-}
     </style>
 </head>
-<body class="bg-dark-knight">
-    <!-- <div class="container-fluid">
-        <div class="container">
-            <header class="d-flex justify-content-end py-3">
-              <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link text-bg-light   bg-success  " aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-              </ul>
-            </header>
-          </div>        
-    </div> -->
-    <div id="terminal" class="container"></div>
+
+<body class="radial-gradient-bg">
+    <div id="terminal" class="container shadow1"></div>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
