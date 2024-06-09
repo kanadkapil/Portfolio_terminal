@@ -1,6 +1,6 @@
 body {
-    background-color: #000;
-    color: #0f0;
+/*     background-color: #000; */
+    color: #0f0; 
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
@@ -28,4 +28,14 @@ body {
     outline: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
+}
+
+/* Mystic Night */
+.bg-mystic-night {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+/* Dark Knight */
+.bg-dark-knight {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
 }
